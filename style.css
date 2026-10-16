@@ -1,0 +1,145 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #2b2d42;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #1d3557;
+}
+
+h2 {
+    border-bottom: 2px solid #457b9d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+#cabecalho-principal {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#foto-perfil {
+    border-radius: 50%;
+    border: 3px solid #457b9d;
+    margin-top: 15px;
+}
+
+#modalContato {
+    margin: auto;
+    padding: 25px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+}
+
+#rodape {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.secao-cv {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.subtitulo-cargo {
+    font-weight: bold;
+    color: #457b9d;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.legenda-foto {
+    font-style: italic;
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.periodo {
+    font-style: italic;
+    color: #000000;
+    font-weight: 600;
+}
+
+a[href] {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a[target="_blank"] {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+a:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+li:first-child {
+    margin-top: 5px;
+}
+
+#btn-abrir-modal, .btn-enviar {
+    background-color: #1d3557;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.btn-fechar {
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
