@@ -25,11 +25,13 @@ h1, h2, h3 {
     border-radius: 8px;
     overflow: hidden;
 }
+
+/* Coluna da esquerda (<aside class="perfil-info">) */
 .perfil-info {
-    flex: 0 0 335px;
+    flex: 0 0 360px;
     background-color: #1d3557;
     color: #f1faee;
-    padding: 40px 15px;
+    padding: 40px 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,6 +79,7 @@ h1, h2, h3 {
 .lista-contato {
     list-style: none;
     padding: 0;
+    font-size: 0.88em;
 }
 
 .lista-contato li {
@@ -87,9 +90,174 @@ h1, h2, h3 {
     white-space: nowrap;
 }
 
+.lista-contato li strong,
+.lista-contato li a {
+    flex-shrink: 0;
+}
+
 .icone-contato {
     filter: brightness(0) invert(1);
     flex-shrink: 0;
 }
 
-.perfil
+.perfil-info a {
+    color: #a8dadc;
+    text-decoration: none;
+}
+
+.perfil-info a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.lista-habilidades {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.lista-habilidades li {
+    margin-bottom: 6px;
+}
+
+.legenda-foto {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #f1faee;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+/* Coluna da direita (<section class="main-content">) */
+.main-content {
+    flex: 2;
+    padding: 40px 40px;
+    background-color: #ffffff;
+}
+
+.main-content .secao-cv {
+    margin-bottom: 30px;
+}
+
+.main-content h2 {
+    font-size: 1.4em;
+    color: #1d3557;
+    border-bottom: 2px solid #457b9d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.destaque-texto {
+    color: #1d3557;
+}
+
+.card-ods {
+    margin-top: 10px;
+}
+
+.card-ods figcaption {
+    color: #6c757d;
+}
+
+.item-experiencia,
+.item-educacao {
+    margin-bottom: 20px;
+}
+
+.item-experiencia h3,
+.item-educacao h3 {
+    font-size: 1.15em;
+    color: #457b9d;
+    margin-bottom: 4px;
+}
+
+.periodo {
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.item-experiencia ul,
+.lista-disciplinas {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.item-experiencia li,
+.lista-disciplinas li {
+    margin-bottom: 4px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#btn-abrir-modal, .btn-enviar {
+    background-color: #1d3557;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.btn-fechar {
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#modalContato {
+    margin: auto;
+    padding: 25px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#rodape {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .curriculo-container {
+        flex-direction: column;
+    }
+
+    .perfil-info {
+        flex: 1 1 auto;
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
+}
