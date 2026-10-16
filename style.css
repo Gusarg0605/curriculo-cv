@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,116 +14,175 @@ body {
 
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
-    color: #1d3557;
 }
 
-h2 {
+.curriculo-container {
+    display: flex;
+    max-width: 1050px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.perfil-info {
+    flex: 1;
+    background-color: #1d3557;
+    color: #f1faee;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cabecalho-principal {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.perfil-info h1 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#foto-perfil {
+    border-radius: 50%;
+    border: 3px solid #a8dadc;
+    margin: 10px 0;
+    object-fit: cover;
+}
+
+.subtitulo-cargo {
+    font-weight: bold;
+    color: #a8dadc;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.secao-aside {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.perfil-info h2 {
+    font-size: 1.2em;
+    color: #ffffff;
+    border-bottom: 2px solid #a8dadc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.lista-contato {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-contato li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    word-break: break-word;
+}
+
+.icone-contato {
+    filter: brightness(0) invert(1);
+    flex-shrink: 0;
+}
+
+.perfil-info a {
+    color: #a8dadc;
+    text-decoration: none;
+}
+
+.perfil-info a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.lista-habilidades {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.lista-habilidades li {
+    margin-bottom: 6px;
+}
+
+.legenda-foto {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #f1faee;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+.main-content {
+    flex: 2;
+    padding: 40px 40px;
+    background-color: #ffffff;
+}
+
+.main-content .secao-cv {
+    margin-bottom: 30px;
+}
+
+.main-content h2 {
+    font-size: 1.4em;
+    color: #1d3557;
     border-bottom: 2px solid #457b9d;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
 
-p {
-    margin-bottom: 10px;
+.destaque-texto {
+    color: #1d3557;
+}
+
+.card-ods {
+    margin-top: 10px;
+}
+
+.card-ods figcaption {
+    color: #6c757d;
+}
+
+.item-experiencia,
+.item-educacao {
+    margin-bottom: 20px;
+}
+
+.item-experiencia h3,
+.item-educacao h3 {
+    font-size: 1.15em;
+    color: #457b9d;
+    margin-bottom: 4px;
+}
+
+.periodo {
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.item-experiencia ul,
+.lista-disciplinas {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.item-experiencia li,
+.lista-disciplinas li {
+    margin-bottom: 4px;
 }
 
 button {
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-}
-#cabecalho-principal {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-#foto-perfil {
-    border-radius: 50%;
-    border: 3px solid #457b9d;
-    margin-top: 15px;
-}
-
-#modalContato {
-    margin: auto;
-    padding: 25px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    max-width: 450px;
-}
-
-#rodape {
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    color: #6c757d;
-    font-size: 0.9em;
-}
-
-.secao-cv {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.subtitulo-cargo {
-    font-weight: bold;
-    color: #457b9d;
-    font-size: 1.1em;
-    margin-top: 10px;
-}
-
-.legenda-foto {
-    font-style: italic;
-    font-size: 0.85em;
-    color: #6c757d;
-    margin-top: 5px;
-}
-
-.periodo {
-    font-style: italic;
-    color: #000000;
-    font-weight: 600;
-}
-
-a[href] {
-    color: #1d3557;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-a[target="_blank"] {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="url"],
-input[type="tel"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-a:hover {
-    color: #e63946;
-    text-decoration: underline;
-}
-
-button:hover {
-    opacity: 0.85;
-}
-
-li:first-child {
-    margin-top: 5px;
 }
 
 #btn-abrir-modal, .btn-enviar {
@@ -142,4 +200,54 @@ li:first-child {
     padding: 10px 18px;
     border-radius: 5px;
     margin-left: 10px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#modalContato {
+    margin: auto;
+    padding: 25px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#rodape {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .curriculo-container {
+        flex-direction: column;
+    }
+
+    .perfil-info {
+        padding: 30px 20px;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
 }
